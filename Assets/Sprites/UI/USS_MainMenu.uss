@@ -1,0 +1,19 @@
+VisualElement {
+}
+
+.buttonMenu {
+    font-size: 100px;
+    -unity-font: url('project://database/Assets/TextMesh%20Pro/Fonts/LiberationSans.ttf?fileID=12800000&guid=e3265ab4bf004d28a9537516768c1c75&type=3#LiberationSans');
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    background-color: rgba(159, 14, 14, 255);
+    width: 250px;
+    height: 100px;
+    color: rgba(212, 212, 212, 255);
+    margin-left: 8px;
+    margin-right: 8px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
