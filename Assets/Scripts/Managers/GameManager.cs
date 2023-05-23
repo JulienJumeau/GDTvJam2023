@@ -13,6 +13,7 @@ namespace GameDevTVJam2023.TheBedroom.Managers
         [Header("* --- Managers Ref --- *")]
         [Space]
         private SceneLoadManager _sceneLoadManager;
+        //private InputManager _inputManager;
 
         [Header("* --- Scene Change System --- *")]
         [Space]
@@ -38,6 +39,7 @@ namespace GameDevTVJam2023.TheBedroom.Managers
             base.Awake();
             // Capped the framerate to 60 for performance purpose.
             Application.targetFrameRate = 60;
+            //_inputManager = new InputManager();
         }
 
         private void Start()
@@ -50,7 +52,21 @@ namespace GameDevTVJam2023.TheBedroom.Managers
             {
                 SceneToLoad = _sceneLoadManager.MainMenuScenesList;
             }
+
+            //_inputManager.UI.Enable();
+            //_inputManager.UI.Click.performed += Click_performed;
+            //_inputManager.UI.Disable();
         }
+
+        //private void Click_started(UnityEngine.InputSystem.InputAction.CallbackContext obj)
+        //{
+        //    Debug.Log(obj.interaction.GetType());
+        //}
+
+        //private void Click_performed(UnityEngine.InputSystem.InputAction.CallbackContext obj)
+        //{
+        //    Debug.Log("Test");
+        //}
 
         #endregion
 
@@ -74,7 +90,7 @@ namespace GameDevTVJam2023.TheBedroom.Managers
         /// <param name="loadedScene">Current Loaded Scene</param>
         internal delegate void SceneChanged(SceneLoadManager.GameScene loadedScene);
 
-        // Event to call when the scene must be changed
+        // Event to call when the scene must be changed.
         internal event SceneChanged OnSceneChanged;
 
         #endregion

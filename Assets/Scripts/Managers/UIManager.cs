@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.InputSystem.UI;
 using UnityEngine.UIElements;
 
 namespace GameDevTVJam2023.TheBedroom.Managers
@@ -10,6 +11,7 @@ namespace GameDevTVJam2023.TheBedroom.Managers
         [Header("* --- UI System --- *")]
         [Space]
         private UIDocument _currentLevelUIDoc;
+        [SerializeField] private InputSystemUIInputModule _inputSystemUIInputModule;
 
         internal UIDocument CurrentLevelUIDoc { get => _currentLevelUIDoc; set => _currentLevelUIDoc = value; }
 
@@ -53,8 +55,10 @@ namespace GameDevTVJam2023.TheBedroom.Managers
                 case SceneLoadManager.GameScene.Permanent:
                     break;
                 case SceneLoadManager.GameScene.MainMenu:
+                    _inputSystemUIInputModule.enabled = true;
                     break;
                 case SceneLoadManager.GameScene.BedroomArt:
+                    _inputSystemUIInputModule.enabled = false;
                     break;
                 default:
                     break;
