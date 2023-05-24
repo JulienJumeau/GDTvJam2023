@@ -11,8 +11,8 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
+  - Ground
+  - Furnitures
   - 
   - 
   - 
@@ -41,6 +41,9 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Character
-    uniqueID: 2447839943
+  - name: Ground
+    uniqueID: 2346027123
+    locked: 0
+  - name: Furnitures
+    uniqueID: 3942604429
     locked: 0

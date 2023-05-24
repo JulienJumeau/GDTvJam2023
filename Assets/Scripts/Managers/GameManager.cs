@@ -13,7 +13,6 @@ namespace GameDevTVJam2023.TheBedroom.Managers
         [Header("* --- Managers Ref --- *")]
         [Space]
         private SceneLoadManager _sceneLoadManager;
-        //private InputManager _inputManager;
 
         [Header("* --- Scene Change System --- *")]
         [Space]
@@ -39,7 +38,6 @@ namespace GameDevTVJam2023.TheBedroom.Managers
             base.Awake();
             // Capped the framerate to 60 for performance purpose.
             Application.targetFrameRate = 60;
-            //_inputManager = new InputManager();
         }
 
         private void Start()
@@ -52,21 +50,7 @@ namespace GameDevTVJam2023.TheBedroom.Managers
             {
                 SceneToLoad = _sceneLoadManager.MainMenuScenesList;
             }
-
-            //_inputManager.UI.Enable();
-            //_inputManager.UI.Click.performed += Click_performed;
-            //_inputManager.UI.Disable();
         }
-
-        //private void Click_started(UnityEngine.InputSystem.InputAction.CallbackContext obj)
-        //{
-        //    Debug.Log(obj.interaction.GetType());
-        //}
-
-        //private void Click_performed(UnityEngine.InputSystem.InputAction.CallbackContext obj)
-        //{
-        //    Debug.Log("Test");
-        //}
 
         #endregion
 
