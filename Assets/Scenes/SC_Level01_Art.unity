@@ -2107,7 +2107,8 @@ GameObject:
   m_Component:
   - component: {fileID: 770040081}
   - component: {fileID: 770040082}
-  m_Layer: 0
+  - component: {fileID: 770040083}
+  m_Layer: 6
   m_Name: Floor_Wood_NoTilling_02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2181,6 +2182,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &770040083
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 770040080}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 2.2072678, y: -3.780763}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 38.399998, y: 10.799999}
+    newSize: {x: 29.999998, y: 8.4375}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 33.985466, y: 3.2384734}
+  m_EdgeRadius: 0
 --- !u!1 &774164355
 GameObject:
   m_ObjectHideFlags: 0
@@ -5380,7 +5407,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1856548450}
   - component: {fileID: 1856548449}
-  m_Layer: 0
+  - component: {fileID: 1856548451}
+  m_Layer: 7
   m_Name: SP_BookShelve_Empty
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5454,6 +5482,32 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &1856548451
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1856548448}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.032850742, y: 0.3449285}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 8, y: 8}
+    newSize: {x: 5.12, y: 5.12}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 5.240571, y: 7.310143}
+  m_EdgeRadius: 0
 --- !u!1 &1857236896
 GameObject:
   m_ObjectHideFlags: 0
@@ -6419,6 +6473,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2277364038824760461, guid: 7a55f0bdfaae7f44d9c4073dd544891f, type: 3}
+      propertyPath: _moveSpeed
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 5316750099897292725, guid: 7a55f0bdfaae7f44d9c4073dd544891f, type: 3}
       propertyPath: m_Name
       value: _CHARACTER

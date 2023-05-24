@@ -69,7 +69,6 @@ namespace GameDevTVJam2023.TheBedroom.UI
             }
         }
 
-
         #endregion
 
         #region Custom Methods

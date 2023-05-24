@@ -89,6 +89,7 @@ namespace GameDevTVJam2023.TheBedroom.Inputs
                 if (hit.collider.transform.gameObject.layer == (int)Layers.Ground)
                 {
                     Debug.Log("Ground Hit");
+                    OnGroundCliked(hit.point);
                 }
 
                 if (hit.collider.transform.gameObject.layer == (int)Layers.Furnitures)
@@ -135,6 +136,14 @@ namespace GameDevTVJam2023.TheBedroom.Inputs
         #endregion
 
         #region Events
+
+        /// <summary>
+        /// Delegate for subscribers method signature : Return type "void" and the loaded scene as args.
+        /// </summary>
+        internal delegate void GroundCliked(Vector2 clickPosition);
+
+        // Event to call when the scene must be changed.
+        internal event GroundCliked OnGroundCliked;
 
         #endregion
     }
