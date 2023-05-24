@@ -15,7 +15,7 @@ TagManager:
   - Furnitures
   - 
   - 
-  - 
+  - Mirror
   - 
   - 
   - 
@@ -41,9 +41,18 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Walls
+    uniqueID: 1981001269
+    locked: 0
   - name: Ground
     uniqueID: 2346027123
     locked: 0
   - name: Furnitures
     uniqueID: 3942604429
+    locked: 0
+  - name: Props
+    uniqueID: 1610863719
+    locked: 0
+  - name: Character
+    uniqueID: 3366858879
     locked: 0
