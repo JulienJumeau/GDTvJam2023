@@ -17,7 +17,7 @@ using UnityEngine.InputSystem.Utilities;
 
 namespace GameDevTVJam2023.TheBedroom.Inputs
 {
-    internal sealed class @InputManager: IInputActionCollection2, IDisposable
+    public partial class @InputManager: IInputActionCollection2, IDisposable
     {
         public InputActionAsset asset { get; }
         public @InputManager()
