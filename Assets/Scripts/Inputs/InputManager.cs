@@ -5,11 +5,22 @@ namespace GameDevTVJam2023.TheBedroom.Inputs
 {
     internal sealed class InputManager : GenericSingleton<InputManager>
     {
+        private enum Layers
+        {
+            Ground = 6,
+            Furnitures = 7,
+        }
+
         #region Fields & Properties
 
         [Header("* --- Managers Ref --- *")]
         [Space]
         private InputActionManager _inputActionManager;
+
+        [Header("* --- Click Detection --- *")]
+        [Space]
+        private Camera _mainCamera;
+        private int _raycastLayerMask;
 
         #endregion
 
@@ -19,8 +30,9 @@ namespace GameDevTVJam2023.TheBedroom.Inputs
         protected override void Awake()
         {
             base.Awake();
-            _inputActionManager = new InputActionManager();
             Cursor.lockState = CursorLockMode.Confined;
+            _inputActionManager = new InputActionManager();
+            _raycastLayerMask = 1 << (int)Layers.Ground | 1 << (int)Layers.Furnitures;
         }
 
         private void Start()
@@ -62,11 +74,34 @@ namespace GameDevTVJam2023.TheBedroom.Inputs
         private void MoveAndSearch_performed(UnityEngine.InputSystem.InputAction.CallbackContext obj)
         {
             Vector3 mousePosition = _inputActionManager.Player.MousePosition.ReadValue<Vector2>();
-            Debug.Log(mousePosition);
+
+            //To change when build
+            if (_mainCamera == null)
+            {
+                _mainCamera = Camera.main;
+            }
+
+            Ray ray = _mainCamera.ScreenPointToRay(mousePosition);
+            RaycastHit2D hit = Physics2D.Raycast(origin: ray.origin, direction: ray.direction, distance: Mathf.Infinity, _raycastLayerMask);
+
+            if (hit.collider != null)
+            {
+                if (hit.collider.transform.gameObject.layer == (int)Layers.Ground)
+                {
+                    Debug.Log("Ground Hit");
+                }
+
+                if (hit.collider.transform.gameObject.layer == (int)Layers.Furnitures)
+                {
+                    Debug.Log("Furnitures Hit");
+                }
+            }
         }
 
         private void Instance_OnSceneChanged(SceneLoadManager.GameScene loadedScene)
         {
+            _mainCamera = Camera.main;
+
             switch (loadedScene)
             {
                 case SceneLoadManager.GameScene.Permanent:
