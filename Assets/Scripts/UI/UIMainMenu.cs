@@ -37,8 +37,6 @@ namespace GameDevTVJam2023.TheBedroom.UI
             {
                 _uiManager.CurrentLevelUIDoc = _uiDocument;
             }
-
-            Debug.Log(_uiManager);
         }
 
         // This will ensure the to subscribe to events. 
@@ -78,7 +76,6 @@ namespace GameDevTVJam2023.TheBedroom.UI
 
         private void ButtonPlay_clicked()
         {
-            Debug.Log("Play");
             GameManager.Instance.SceneToLoad = SceneLoadManager.Instance.BedroomScenesList;
         }
 
