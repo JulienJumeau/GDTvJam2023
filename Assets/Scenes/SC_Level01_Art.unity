@@ -6401,30 +6401,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2277364038824760461, guid: 7a55f0bdfaae7f44d9c4073dd544891f, type: 3}
-      propertyPath: _moveSpeed
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 5157545702972967120, guid: 7a55f0bdfaae7f44d9c4073dd544891f, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 5.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 5157545702972967120, guid: 7a55f0bdfaae7f44d9c4073dd544891f, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 5.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 5157545702972967120, guid: 7a55f0bdfaae7f44d9c4073dd544891f, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 5.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 5157545702972967120, guid: 7a55f0bdfaae7f44d9c4073dd544891f, type: 3}
-      propertyPath: m_ConstrainProportionsScale
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5316750099897292725, guid: 7a55f0bdfaae7f44d9c4073dd544891f, type: 3}
-      propertyPath: m_Icon
-      value: 
-      objectReference: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
     - target: {fileID: 5316750099897292725, guid: 7a55f0bdfaae7f44d9c4073dd544891f, type: 3}
       propertyPath: m_Name
       value: _CHARACTER
@@ -6435,11 +6411,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5316750099897292726, guid: 7a55f0bdfaae7f44d9c4073dd544891f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.15
+      value: -2.82
       objectReference: {fileID: 0}
     - target: {fileID: 5316750099897292726, guid: 7a55f0bdfaae7f44d9c4073dd544891f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.85
+      value: -4.46
       objectReference: {fileID: 0}
     - target: {fileID: 5316750099897292726, guid: 7a55f0bdfaae7f44d9c4073dd544891f, type: 3}
       propertyPath: m_LocalPosition.z
@@ -6471,26 +6447,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5316750099897292726, guid: 7a55f0bdfaae7f44d9c4073dd544891f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5316750099940909489, guid: 7a55f0bdfaae7f44d9c4073dd544891f, type: 3}
-      propertyPath: m_FlipX
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5316750099940909489, guid: 7a55f0bdfaae7f44d9c4073dd544891f, type: 3}
-      propertyPath: m_SortingLayer
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 5316750099940909489, guid: 7a55f0bdfaae7f44d9c4073dd544891f, type: 3}
-      propertyPath: m_SortingLayerID
-      value: -928108417
-      objectReference: {fileID: 0}
-    - target: {fileID: 5316750099940909494, guid: 7a55f0bdfaae7f44d9c4073dd544891f, type: 3}
-      propertyPath: m_Name
-      value: SP_Chara_Front
-      objectReference: {fileID: 0}
-    - target: {fileID: 7134500641545291110, guid: 7a55f0bdfaae7f44d9c4073dd544891f, type: 3}
-      propertyPath: m_FlipX
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

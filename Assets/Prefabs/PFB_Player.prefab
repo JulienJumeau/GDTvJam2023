@@ -49,7 +49,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &3222062027776959328
 Transform:
   m_ObjectHideFlags: 0
@@ -148,8 +148,8 @@ MonoBehaviour:
   - {fileID: 4636744184649893884}
   - {fileID: 6426329466222481895}
   m_Bounds:
-    m_Center: {x: -0.04283163, y: -0.0557957, z: 0}
-    m_Extent: {x: 0.14515923, y: 0.3482979, z: 0}
+    m_Center: {x: -0.042831615, y: -0.05579573, z: 0}
+    m_Extent: {x: 0.14515921, y: 0.34829792, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
   m_AutoRebind: 0
@@ -266,7 +266,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &5157545702972967120
 Transform:
   m_ObjectHideFlags: 0
@@ -277,7 +277,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0.69, y: 0.47, z: 0}
   m_LocalScale: {x: 5.5, y: 5.5, z: 5.5}
-  m_ConstrainProportionsScale: 1
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5067586921333892002}
   m_Father: {fileID: 5316750100170858370}
@@ -373,8 +373,8 @@ MonoBehaviour:
   - {fileID: 3204323839456151930}
   - {fileID: 864754482521191229}
   m_Bounds:
-    m_Center: {x: -0.16365612, y: -0.063926876, z: 0}
-    m_Extent: {x: 0.1338858, y: 0.41656458, z: 0}
+    m_Center: {x: -0.16365609, y: -0.063926905, z: 0}
+    m_Extent: {x: 0.13388577, y: 0.41656455, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
   m_AutoRebind: 0
@@ -1322,7 +1322,7 @@ GameObject:
   m_Layer: 0
   m_Name: PFB_Player
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -1354,7 +1354,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c12a47316c7e0c94c905ac7de9b65985, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _moveSpeed: 0
+  _moveSpeed: 5
+  _spriteGOList:
+  - {fileID: 5316750099940909494}
+  - {fileID: 1310992864900089032}
+  - {fileID: 2386372177004054975}
+  - {fileID: 2386372177004054975}
 --- !u!1 &5316750099940909494
 GameObject:
   m_ObjectHideFlags: 0
@@ -1478,7 +1483,7 @@ MonoBehaviour:
   - {fileID: 5316750098463558931}
   - {fileID: 5316750098178291210}
   m_Bounds:
-    m_Center: {x: -0.015921012, y: -0.043062896, z: 0}
+    m_Center: {x: -0.015921012, y: -0.043062925, z: 0}
     m_Extent: {x: 0.14493653, y: 0.34835476, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
@@ -1601,7 +1606,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5316750100170858369}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.13, y: 2.05, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
