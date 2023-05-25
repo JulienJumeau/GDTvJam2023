@@ -110,22 +110,22 @@ namespace GameDevTVJam2023.TheBedroom.Player
             }
 
             // Determine the appropriate animation based on the angle
-            if (angle >= -_rightAngleThreshold && angle < _rightAngleThreshold)
+            if (angle is >= (-_rightAngleThreshold) and < _rightAngleThreshold)
             {
                 _spriteGOList[3].SetActive(true);   // Right
             }
 
-            else if (angle >= _rightAngleThreshold && angle < _upAngleThreshold)
+            else if (angle is >= _rightAngleThreshold and < _upAngleThreshold)
             {
                 _spriteGOList[1].SetActive(true);   // Up
             }
 
-            else if (angle >= _upAngleThreshold || angle < -_upAngleThreshold)
+            else if (angle is >= _upAngleThreshold or < (-_upAngleThreshold))
             {
                 _spriteGOList[2].SetActive(true);   // Left
             }
 
-            else if (angle >= -_upAngleThreshold && angle < -_rightAngleThreshold)
+            else if (angle is >= (-_upAngleThreshold) and < (-_rightAngleThreshold))
             {
                 _spriteGOList[0].SetActive(true);   // Down
             }
