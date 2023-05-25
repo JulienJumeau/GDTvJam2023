@@ -43,16 +43,16 @@ namespace GameDevTVJam2023.TheBedroom.Player
         {
             if (mustSubscribe)
             {
-                _inputManager.OnGroundCliked += _inputManager_OnGroundCliked;
+                _inputManager.OnGroundCliked += InputManager_OnGroundClicked;
             }
 
             else
             {
-                _inputManager.OnGroundCliked -= _inputManager_OnGroundCliked;
+                _inputManager.OnGroundCliked -= InputManager_OnGroundClicked;
             }
         }
 
-        private void _inputManager_OnGroundCliked(Vector2 clickPosition)
+        private void InputManager_OnGroundClicked(Vector2 clickPosition)
         {
             if (_moveCoroutine != null)
             {
