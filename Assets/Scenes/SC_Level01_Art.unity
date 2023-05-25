@@ -223,7 +223,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &21639230
 Transform:
   m_ObjectHideFlags: 0
@@ -3338,7 +3338,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1177013387}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.14, y: 0.38, z: -10}
+  m_LocalPosition: {x: -0.07, y: 0.45, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6405,6 +6405,22 @@ PrefabInstance:
       propertyPath: _moveSpeed
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 5157545702972967120, guid: 7a55f0bdfaae7f44d9c4073dd544891f, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 5.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5157545702972967120, guid: 7a55f0bdfaae7f44d9c4073dd544891f, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 5.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5157545702972967120, guid: 7a55f0bdfaae7f44d9c4073dd544891f, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 5.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5157545702972967120, guid: 7a55f0bdfaae7f44d9c4073dd544891f, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5316750099897292725, guid: 7a55f0bdfaae7f44d9c4073dd544891f, type: 3}
       propertyPath: m_Icon
       value: 
@@ -6468,6 +6484,14 @@ PrefabInstance:
     - target: {fileID: 5316750099940909489, guid: 7a55f0bdfaae7f44d9c4073dd544891f, type: 3}
       propertyPath: m_SortingLayerID
       value: -928108417
+      objectReference: {fileID: 0}
+    - target: {fileID: 5316750099940909494, guid: 7a55f0bdfaae7f44d9c4073dd544891f, type: 3}
+      propertyPath: m_Name
+      value: SP_Chara_Front
+      objectReference: {fileID: 0}
+    - target: {fileID: 7134500641545291110, guid: 7a55f0bdfaae7f44d9c4073dd544891f, type: 3}
+      propertyPath: m_FlipX
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7a55f0bdfaae7f44d9c4073dd544891f, type: 3}
